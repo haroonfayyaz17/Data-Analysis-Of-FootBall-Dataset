@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{874855DE-D77C-440F-83CC-DC5B9948BE35}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Prob_Lab_Football_</RootNamespace>
+    <AssemblyName>Prob Lab%28Football%29</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GroundPredicition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroundPredicition.Designer.cs">
+      <DependentUpon>GroundPredicition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Homegroundwin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Homegroundwin.Designer.cs">
+      <DependentUpon>Homegroundwin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PieAwayTeam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PieAwayTeam.Designer.cs">
+      <DependentUpon>PieAwayTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProjectedScore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectedScore.Designer.cs">
+      <DependentUpon>ProjectedScore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="showData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="showData.Designer.cs">
+      <DependentUpon>showData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SQLConn.cs" />
+    <Compile Include="winPercent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="winPercent.Designer.cs">
+      <DependentUpon>winPercent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinPredictor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinPredictor.Designer.cs">
+      <DependentUpon>WinPredictor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yearlyData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yearlyData.Designer.cs">
+      <DependentUpon>yearlyData.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GroundPredicition.resx">
+      <DependentUpon>GroundPredicition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Homegroundwin.resx">
+      <DependentUpon>Homegroundwin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PieAwayTeam.resx">
+      <DependentUpon>PieAwayTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectedScore.resx">
+      <DependentUpon>ProjectedScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="showData.resx">
+      <DependentUpon>showData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="winPercent.resx">
+      <DependentUpon>winPercent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinPredictor.resx">
+      <DependentUpon>WinPredictor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yearlyData.resx">
+      <DependentUpon>yearlyData.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
